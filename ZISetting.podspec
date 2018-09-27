@@ -18,11 +18,6 @@ s.source       = { :git => 'https://github.com/fauzisho/ZISetting.git', :tag => 
 
 s.source_files  = "ZISetting", "ZISetting/**/*.{h,m,swift,xib}"
 
-s.resources = "ZISetting/**/*.xcassets"
-s.resource_bundles = {
-    'ZISetting' => ['ZISetting/**/*.{lproj,xib,xcassets,imageset,png,mp3}']
-}
-
 s.framework		= 'UIKit', 'AVFoundation'
 s.requires_arc	= false
 

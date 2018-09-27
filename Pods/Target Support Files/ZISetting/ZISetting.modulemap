@@ -1,0 +1,6 @@
+framework module ZISetting {
+  umbrella header "ZISetting-umbrella.h"
+
+  export *
+  module * { export * }
+}

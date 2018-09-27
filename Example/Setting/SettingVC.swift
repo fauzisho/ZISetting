@@ -16,9 +16,19 @@ class SettingVC : ZisSettingView{
         entries = [
             [
                 [
+                    .Title: "Sampel Setting 1",
+                    .AccessoryType: UITableViewCellAccessoryType.disclosureIndicator,
+                    .CellAction:{ () in
+                        
+                    },
+                    .AccessoryAction: { () in
+                        
+                    },
+                    ],
+                [
                     .CellType: UITableViewCellStyle.subtitle,
                     .Title: "Sampel Setting 1",
-                    .AccessoryType: UITableViewCellAccessoryType.detailButton,
+                    .AccessoryType: UITableViewCellAccessoryType.disclosureIndicator,
                     .Subtitle: { () -> String? in return "Sub Setting 1"},
                     .CellAction:{ () in
                         
@@ -35,11 +45,20 @@ class SettingVC : ZisSettingView{
                         
                     },
                     ],
+                [
+                    .CellType: UITableViewCellStyle.subtitle,
+                    .Title: "Sampel Setting 1",
+                    .AccessoryType: UITableViewCellAccessoryType.disclosureIndicator,
+                    .Image: "ic_vocher",
+                    .Subtitle: { () -> String? in return "Sub Setting 1"},
+                    .CellAction:{ () in
+                        
+                    },
+                    .AccessoryAction: { () in
+                        
+                    },
+                    ]
                 ]
         ]
     }
-}
-
-extension SettingVC {
-    
 }

@@ -11,7 +11,7 @@ Use CocoaPods 0.36+, which adds support for Swift and embedded frameworks. You c
 $ gem install cocoapods
 ```
 
-To integrate SwiftySettings into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate ZISetting into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```
 pod 'ZISetting'

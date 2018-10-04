@@ -21,6 +21,9 @@
 		2DBFC3AE2158C5DD00B5A122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBFC3AC2158C5DD00B5A122 /* LaunchScreen.storyboard */; };
 		2DBFC3B92158C5DD00B5A122 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBFC3B82158C5DD00B5A122 /* ExampleTests.swift */; };
 		2DBFC3C42158C5DE00B5A122 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBFC3C32158C5DE00B5A122 /* ExampleUITests.swift */; };
+		3D95A0172166710E008B4397 /* ZISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95A0132166710E008B4397 /* ZISetting.swift */; };
+		3D95A0182166710E008B4397 /* ZisSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95A0152166710E008B4397 /* ZisSettingView.swift */; };
+		3D95A0192166710E008B4397 /* ZisKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95A0162166710E008B4397 /* ZisKeyType.swift */; };
 		3E521C71356BD489FB085BD9 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D03C4824EC85DB2FDC1F32 /* Pods_ExampleTests.framework */; };
 		9B9E91472E659F23F19F1C53 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92694639101B01ECC735C805 /* Pods_ExampleUITests.framework */; };
 		ADCE35C1C513833B46E1A8B0 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DF3CC525F8CB52C233F970 /* Pods_Example.framework */; };
@@ -78,6 +81,9 @@
 		2DBFC3C52158C5DE00B5A122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C7EB4071F5C186F5C56ED7 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		324495120C8A140D1931B108 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		3D95A0132166710E008B4397 /* ZISetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZISetting.swift; sourceTree = "<group>"; };
+		3D95A0152166710E008B4397 /* ZisSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZisSettingView.swift; sourceTree = "<group>"; };
+		3D95A0162166710E008B4397 /* ZisKeyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZisKeyType.swift; sourceTree = "<group>"; };
 		78187127E70DBB0DCECFD03E /* Pods-ZISettingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZISettingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZISettingTests/Pods-ZISettingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92694639101B01ECC735C805 /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8E13BFAEBE2F23FB8973FA /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +189,8 @@
 		2DBFC3832158C52D00B5A122 /* ZISetting */ = {
 			isa = PBXGroup;
 			children = (
+				3D95A0142166710E008B4397 /* Module */,
+				3D95A0132166710E008B4397 /* ZISetting.swift */,
 				2DBFC39B2158C5B400B5A122 /* ZiSetting.podspec */,
 				2DBFC3842158C52D00B5A122 /* ZISetting.h */,
 				2DBFC3852158C52D00B5A122 /* Info.plist */,
@@ -229,6 +237,15 @@
 				2DBFC3C52158C5DE00B5A122 /* Info.plist */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		3D95A0142166710E008B4397 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D95A0152166710E008B4397 /* ZisSettingView.swift */,
+				3D95A0162166710E008B4397 /* ZisKeyType.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		96BB659DBC2D3AB82C6A3937 /* Pods */ = {
@@ -369,6 +386,7 @@
 				TargetAttributes = {
 					2DBFC3802158C52D00B5A122 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					2DBFC3892158C52D00B5A122 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -566,6 +584,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D95A0182166710E008B4397 /* ZisSettingView.swift in Sources */,
+				3D95A0192166710E008B4397 /* ZisKeyType.swift in Sources */,
+				3D95A0172166710E008B4397 /* ZISetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C11459D3B17C2FCFE95EA8B4 /* Pods-ZISetting.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -775,10 +797,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZISetting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ZISetting;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -788,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B105C78FA104702820BE30A /* Pods-ZISetting.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -796,7 +824,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZISetting/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ZISetting;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -809,9 +841,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78187127E70DBB0DCECFD03E /* Pods-ZISettingTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZISettingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ZISettingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -823,9 +860,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC1E9BC5B4EA9B96E1E0E795 /* Pods-ZISettingTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZISettingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ZISettingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -840,7 +882,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -855,7 +900,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -871,7 +919,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -888,7 +940,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -904,7 +960,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -920,7 +980,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uzi.ExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

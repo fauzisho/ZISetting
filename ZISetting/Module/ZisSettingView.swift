@@ -27,14 +27,14 @@ open class ZisSettingView: UITableViewController {
         var identifier = "SettingCell"
         var cellStyle = UITableViewCellStyle.default
         
-        if let cellType =  entry[.CellType] as? UITableViewCellStyle {
+        if let cellType =  entry[.cellType] as? UITableViewCellStyle {
             cellStyle = cellType
             identifier = identifier + "\(cellType.rawValue)"
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: cellStyle, reuseIdentifier: identifier)
         
-        if let title = entry[ZisKeyType.Title] as? String {
+        if let title = entry[.title] as? String {
             cell.textLabel?.text = title
         }
         
@@ -42,9 +42,9 @@ open class ZisSettingView: UITableViewController {
             cell.textLabel?.font = UIFont.systemFont(ofSize: 11.0)
         }
         
-        if let subtitle = entry[ZisKeyType.Subtitle] as? String {
+        if let subtitle = entry[.subtitle] as? String {
             cell.detailTextLabel?.text = subtitle
-        } else if let subtitleClosure = entry[ZisKeyType.Subtitle] as? () -> String? {
+        } else if let subtitleClosure = entry[.subtitle] as? () -> String? {
             cell.detailTextLabel?.text = subtitleClosure()
         }
         
@@ -52,15 +52,15 @@ open class ZisSettingView: UITableViewController {
             cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 16.0)
         }
         
-        if let imageName = entry[ZisKeyType.Image] as? String {
+        if let imageName = entry[.image] as? String {
             cell.imageView?.image = UIImage(named: imageName)
         }
         
-        if let accessoryType = entry[ZisKeyType.AccessoryType] as? UITableViewCellAccessoryType {
+        if let accessoryType = entry[.accessoryType] as? UITableViewCellAccessoryType {
             cell.accessoryType = accessoryType
         }
         
-        if let accessoryView = entry[ZisKeyType.AccessoryView] as? UIView {
+        if let accessoryView = entry[.accessoryView] as? UIView {
             cell.accessoryView = accessoryView
         }
         
@@ -71,7 +71,7 @@ open class ZisSettingView: UITableViewController {
     open override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         let entry = entries[indexPath.section][indexPath.row]
         
-        if let accessoryAction = entry[ZisKeyType.AccessoryAction] as? () -> () {
+        if let accessoryAction = entry[.accessoryAction] as? () -> () {
             accessoryAction()
         }
     }
@@ -85,7 +85,7 @@ open class ZisSettingView: UITableViewController {
     override open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let entry = entries[indexPath.section][indexPath.row]
         
-        if let cellAction = entry[ZisKeyType.CellAction] as? () -> () {
+        if let cellAction = entry[.cellAction] as? () -> () {
             cellAction()
         }
     }

@@ -1,2 +1,4 @@
+**/xcuserdata/**
+**/UniversalLib.xcscheme
 Pods/*
 podfile.lock

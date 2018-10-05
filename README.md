@@ -33,12 +33,12 @@ Simple implementation
               .Title: "Sampel Setting 1",
               .AccessoryType: UITableViewCellAccessoryType.disclosureIndicator,
               .Image: "ic_vocher",
-              .Subtitle: { () -> String? in return "Sub Setting 1"},
+              .Subtitle: "Sub Setting 1",
               .CellAction:{ () in
-                 // event when clicked Cell        
+                    // event when clicked Cell        
               },
               .AccessoryAction: { () in
-                  // event when clicked Accessory    
+                     // event when clicked Accessory    
               },
                     ]]
 
